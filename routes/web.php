@@ -15,6 +15,8 @@ Route::get('/', function () {
     return view('auth.login');
 });
 Route::resource('home','HomeController');
+Route::resource('role','RoleController');
+Route::resource('user','userController');
 
 Route::get('tasks', function(){
 	return App\Task::where('completed', 1)->pluck('body');
