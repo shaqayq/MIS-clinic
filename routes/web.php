@@ -22,6 +22,7 @@ Route::resource('employee','EmployeeController');
 Route::resource('patient','PatientController');
 Route::resource('p_detail','PatientDetailController');
 Route::resource('expend','ExpendController');
+Route::resource('sicknees','SickneesController');
 Route::resource('salary','SalaryController');
 Route::get('detail/{id}','SalaryController@show_detail');
 Route::resource('service_report','ServiceReportController');

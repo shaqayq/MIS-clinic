@@ -16,15 +16,12 @@ class CreatePatientsTable extends Migration
         Schema::create('patients', function (Blueprint $table) {
             $table->increments('id');
             $table->string('name');
+            $table->string('f_name');
             $table->string('L_name');
-            $table->integer('phone');
             $table->date('date');
             $table->integer('age');
             $table->string('sex');
-            $table->integer('dr_id')->unsigned();
-            $table->foreign('dr_id')->references('id')->on('employees');
-            $table->integer('ser_id')->unsigned();
-            $table->foreign('ser_id')->references('id')->on('services');            
+            $table->string('job');
             $table->timestamps();
         });
     }
