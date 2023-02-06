@@ -38,7 +38,7 @@
 		<div class="col-lg-5">
 			<div class="form-group">
 				<label for="exampleInputPassword1">تخلص بیمار</label>
-				<input type="l_name"  name="e_name" class="form-control" id="role" value="{{$patient->l_name}}" disabled="">
+				<input type="l_name"  name="e_name" class="form-control" id="role" value="{{$patient->L_name}}" disabled="">
 			</div>
 		</div>
 		</div>

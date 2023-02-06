@@ -48,7 +48,7 @@
 						<div class="col-lg-4">
 							<div class="form-group">
 								<label for="exampleInputEmail1">تخلص</label>
-								<input name="l_name" class="form-control" type="text" value="{{$patient->l_name}}">
+								<input name="l_name" class="form-control" type="text" value="{{$patient->L_name}}">
 								<b style="color: red">{{$errors->first('l_name')}}</b>
 							</div>
 						</div>
