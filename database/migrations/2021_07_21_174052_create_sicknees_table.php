@@ -15,6 +15,10 @@ class CreateSickneesTable extends Migration
     {
         Schema::create('sicknees', function (Blueprint $table) {
             $table->increments('id');
+            $table->string('per_name');
+            $table->string('eng_name');
+            $table->integer('price');
+
             $table->timestamps();
         });
     }
