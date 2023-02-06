@@ -15,6 +15,11 @@ class CreateHMediciansTable extends Migration
     {
         Schema::create('h_medicians', function (Blueprint $table) {
             $table->increments('id');
+            $table->integer('p_id');
+            $table->integer('s_id');
+            $tablle->string('result');
+            $tablle->date('next_date');
+
             $table->timestamps();
         });
     }

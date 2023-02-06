@@ -50,7 +50,7 @@
                 <tr>
                   <td>{{$p->name}}</td>
                   <td>{{$p->f_name}}</td>
-                  <td>{{$p->l_name}}</td>
+                  <td>{{$p->L_name}}</td>
                   <td>{{$p->age}}</td>
                   <td>{{$p->job}}</td>
                   <td>{{$p->sex}}</td>

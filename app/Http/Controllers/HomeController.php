@@ -25,24 +25,24 @@ class HomeController extends Controller
      */
     public function index()
     {   
-        return view('home');
-        // $today=DATE_FORMAT(NOW(),'y-m-d');
-        // $month=Carbon::now()->month;
-        // $year=Carbon::now()->year;
         
-        // $patient_today=DB::table('patients')->select('name')->where('date','=',$today)
-        // ->count('name');
+        $today=DATE_FORMAT(NOW(),'y-m-d');
+        $month=Carbon::now()->month;
+        $year=Carbon::now()->year;
+        
+        $patient_today=DB::table('patients')->select('name')->where('date','=',$today)
+        ->count('name');
 
-        // $patient_month=DB::table('patients')->select('name')->whereMonth('created_at',$month)
-        // ->count('name');
+        $patient_month=DB::table('patients')->select('name')->whereMonth('created_at',$month)
+        ->count('name');
 
-        // $patient_year=DB::table('patients')->select('name')->whereYear('created_at',$year)
-        // ->count('name');
+        $patient_year=DB::table('patients')->select('name')->whereYear('created_at',$year)
+        ->count('name');
 
-        // $reserve_patient=DB::table('h_medicians')->select('id')->where('next_date','=',$today)
-        // ->count('id');
-        // //dd($patient_month);
-        // return view('home',compact('patient_today','patient_month','patient_year','reserve_patient'));
+        $reserve_patient=DB::table('h_medicians')->select('id')->where('next_date','=',$today)
+        ->count('id');
+        //dd($patient_month);
+        return view('home',compact('patient_today','patient_month','patient_year','reserve_patient'));
     }
     
 

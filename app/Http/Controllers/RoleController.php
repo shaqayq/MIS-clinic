@@ -46,8 +46,8 @@ class RoleController extends Controller
             'en_name'=>'required',
         ]);
         $role=new Role;
-        $role->P_name=$request->p_name;
-        $role->E_name=$request->e_name;
+        $role->P_name=$request->pr_name;
+        $role->E_name=$request->en_name;
         $role->save();
         session()->flash("msg","معلومات موفقانه ثبت شد!");
         return redirect()->route('role.index');

@@ -23,7 +23,7 @@
             <!-- small box -->
             <div class="small-box bg-danger">
               <div class="inner">
-               
+                <h3>{{$reserve_patient}}</h3>
 
                 <p>تعداد مراجعین ریزرفی امروز</p>
               </div>
@@ -37,7 +37,7 @@
             <!-- small box -->
             <div class="small-box bg-info">
               <div class="inner">
-              
+                <h3>{{$patient_today}}</h3>
 
                 <p>تعداد مراجعین امروز</p>
               </div>
@@ -53,7 +53,7 @@
             <!-- small box -->
             <div class="small-box bg-success">
               <div class="inner">
-               
+                <h3>{{$patient_month}}</h3>
 
                 <p>تعداد مراجعین این ماه</p>
               </div>
@@ -68,7 +68,7 @@
             <!-- small box -->
             <div class="small-box bg-warning">
               <div class="inner">
-               
+                <h3>{{$patient_year}}</h3>
 
                 <p>مجموعه مراجعین امسال</p>
               </div>
