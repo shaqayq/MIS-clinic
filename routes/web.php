@@ -22,6 +22,8 @@ Route::resource('employee','EmployeeController');
 Route::resource('patient','PatientController');
 Route::resource('p_detail','PatientDetailController');
 Route::resource('expend','ExpendController');
+Route::resource('salary','SalaryController');
+Route::get('detail/{id}','SalaryController@show_detail');
 
 Route::get('tasks', function(){
 	return App\Task::where('completed', 1)->pluck('body');
