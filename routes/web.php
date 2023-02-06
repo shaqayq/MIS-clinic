@@ -20,6 +20,7 @@ Route::resource('user','userController');
 Route::resource('job','JobController');
 Route::resource('employee','EmployeeController');
 Route::resource('patient','PatientController');
+Route::resource('p_detail','PatientDetailController');
 
 Route::get('tasks', function(){
 	return App\Task::where('completed', 1)->pluck('body');
