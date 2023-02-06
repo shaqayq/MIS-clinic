@@ -63,6 +63,9 @@
           <div class="col-4">
             <button type="submit" class="btn btn-success btn-block btn-flat">ورود</button>
           </div>
+          <div class="col-6" >
+          <a style="float: left;">ایجاد حساب جدید</a>
+        </div>
           <!-- /.col -->
         </div>
       </form>
