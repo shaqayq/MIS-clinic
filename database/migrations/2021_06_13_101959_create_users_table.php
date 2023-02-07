@@ -20,8 +20,8 @@ class CreateUsersTable extends Migration
             $table->string('email')->unique();
             $table->integer('phone')->nullable();
             $table->string('password');
-            $table->string('role')->default('user');
-            $table->integer('job_id')->unsigned();
+            $table->string('role')->default('Admin');
+            $table->integer('job_id')->unsigned()->nullable();
             $table->foreign('job_id')->references('id')->on('jobs');
             $table->timestamp('email_verified_at')->nullable();
             $table->rememberToken();
