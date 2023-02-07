@@ -17,8 +17,8 @@ class CreateHMediciansTable extends Migration
             $table->increments('id');
             $table->integer('p_id');
             $table->integer('s_id');
-            $tablle->string('result');
-            $tablle->date('next_date');
+            $table->string('result');
+            $table->date('next_date');
 
             $table->timestamps();
         });
