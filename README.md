@@ -10,10 +10,6 @@ Management information system for a dental clinic.
 - Js
 
 
-## Live Demo
-
-For the live demo click [here]()
-
 ## Authors
 
 👤 **Shaqayq Darwazi**
